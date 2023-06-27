@@ -1,3 +1,12 @@
+/*
+Assignment: Calcular edad
+Calcular edad ingresando la fecha de nacimiento de una persona.
+Para esta tarea se pide ingresar una fecha de nacimiento en formato string,
+convertirla a una fecha del tipo java.util.Date y calcular la edad de la persona de acuerdo a la fecha actual.
+Intentar usar solo lo visto hasta el momento, no el api de java 8 que lo veremos más adelante,
+también se pueden apoyar de google que hay varios ejemplos.
+ */
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
@@ -13,8 +22,6 @@ public class CalcularEdad {
         try {
             Date fechaActual = new Date();
             Date fechaNacimiento = format.parse(scanner.next());
-            //System.out.println("fechaActual = " + fechaActual);
-            //System.out.println("fechaNacimiento = " + fechaNacimiento);
             String fechaActualStr = format.format(fechaActual);
             String fechaNacimientoStr = format.format(fechaNacimiento);
             System.out.println("fechaActualStr = " + fechaActualStr);
@@ -38,10 +45,3 @@ public class CalcularEdad {
         }
     }
 }
-
-/*
-Para esta tarea se pide ingresar una fecha de nacimiento en formato string, convertirla a una fecha del tipo
-java.util.Date y calcular la edad de la persona de acuerdo a la fecha actual.
-Intentar usar solo lo visto hasta el momento, no el api de java 8 que lo veremos más adelante, también se pueden
-apoyar de google que hay varios ejemplos.
- */
