@@ -1,3 +1,9 @@
+/*
+Assignment: Mostrar ordenados dos números
+Pedir dos números y mostrarlos ordenados de mayor a menor
+El desafío es un programa que pida dos números y los muestre ordenados de mayor a menor.
+Podría ser utilizando operador ternario.
+ */
 import java.util.Scanner;
 
 public class NumerosDeMayorAMenor {
