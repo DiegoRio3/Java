@@ -1,3 +1,13 @@
+/*
+Assignment: Sistema de notas de alumnos
+Crear un sistema de reportes de notas de los alumnos
+Pedir 20 notas finales de alumnos en una escala de 1 a 7, manejar decimales en las notas (double).
+Mostrar el promedio de las notas mayores a 5, promedio de notas inferiores a 4 y la cantidad de notas 1,
+ ademas mostrar el promedio total.
+Ayuda: usar un bucle for que itere hasta 20 (notas) y dentro del ciclo pedir las notas
+ una a una para realizar los cálculos (contadores, sumas).
+Opcional: si una de las notas ingresadas es 0 debe salirse del ciclo for y mostrar un mensaje de error finalizando el programa.
+ */
 import java.util.Scanner;
 
 public class SistemaNotasAlumnos {
@@ -32,13 +42,7 @@ public class SistemaNotasAlumnos {
     }
 }
 
-/* Pedir 20 notas finales de alumnos en una escala de 1 a 7, manejar decimales en las notas (double).
-Mostrar el promedio de las notas mayores a 5, promedio de notas inferiores a 4 y la cantidad de notas 1, ademas mostrar el promedio total.
-
-Ayuda: usar un bucle for que itere hasta 20 (notas) y dentro del ciclo pedir las notas una a una para realizar los cálculos (contadores, sumas).
-Opcional: si una de las notas ingresadas es 0 debe salirse del ciclo for y mostrar un mensaje de error finalizando el programa.
-
-
+/*
 Y este es el programa del curso
 -------------------------------------------------------------------------
 
@@ -111,5 +115,4 @@ public class PromedioNotasAlumnos {
         System.out.println("Promedio total de notas: " + promedioTotalNotas);
     }
 }
-
  */
