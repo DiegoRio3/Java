@@ -1,3 +1,11 @@
+/*
+Assignment: Multiplicar dos números
+Multiplicar dos números sin usar el símbolo de multiplicación.
+Mediante el teclado pedir dos números enteros positivos o negativos y multiplicarlos,
+pero sin usar el símbolo de multiplicación (*).
+Puede utilizar una sentencia for para realizar la multiplicación y tener en cuenta los unarios,
+donde menos por menos es positivo.
+ */
 import java.util.Scanner;
 
 public class MuliplicarDosNumeros {
@@ -14,11 +22,8 @@ public class MuliplicarDosNumeros {
         System.out.println("resultado = " + resultado);
     }
 }
+
 /*
-Mediante el teclado pedir dos números enteros positivos o negativos y multiplicarlos, pero sin usar el símbolo de multiplicación (*).
-
-Puede utilizar una sentencia for para realizar la multiplicación y tener en cuenta los unarios, donde menos por menos es positivo.
-
 Ejercicio del curso
 -------------------------------------------------------------------------------------------
 
@@ -56,5 +61,4 @@ public class MultiplicarSinSimbolo {
         System.out.println("el resultado es " + resultado);
     }
 }
-
  */
