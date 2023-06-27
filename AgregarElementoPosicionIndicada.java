@@ -1,3 +1,6 @@
+/*
+En un arreglo ordenado agregar un elemento en una posición adecuada de manera que siga ordenado
+ */
 import java.util.Scanner;
 
 public class AgregarElementoPosicionIndicada {
