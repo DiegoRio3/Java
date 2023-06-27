@@ -1,3 +1,10 @@
+/*
+Assignment: Ordenar el arreglo de la forma último primero, etc
+Ordenar los elementos del arreglo de 10 números según requerimientos.
+Leer 10 números enteros desde el teclado para llenar un arreglo de 10 elementos.
+Luego debemos mostrarlos en el siguiente orden: el último, el primero, el penúltimo, el segundo,
+el antepenúltimo, el tercero, y así sucesivamente.
+ */
 import java.util.Scanner;
 
 public class ArregloUltimoPrimero {
