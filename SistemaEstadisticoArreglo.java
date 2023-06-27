@@ -1,3 +1,9 @@
+/*
+Assignment: Sistema estadístico de un arreglo
+Sistema estadístico con elementos de un arreglo
+Leer 7 números por teclado para llenar un arreglo y a continuación calcular el promedio de los números positivos,
+ el promedio de los negativos y contar el número de ceros.
+ */
 import java.util.Scanner;
 
 public class SistemaEstadisticoArreglo {
