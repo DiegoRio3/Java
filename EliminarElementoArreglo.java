@@ -1,3 +1,6 @@
+/*
+Eliminar un elemento en una posición sin dejar hueco
+ */
 import java.util.Scanner;
 
 public class EliminarElementoArreglo {
