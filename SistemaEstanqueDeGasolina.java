@@ -13,28 +13,36 @@ para una mejor precisión, pero tambien puede ser del tipo int.
     Si está entre 20 y menor a 35: imprimir Suficiente
     Si está entre 1 y menor a 20: imprimir Insuficiente
  */
+
 import java.util.Scanner;
 
 public class SistemaEstanqueDeGasolina {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese la medida actual del estanque: ");
         double capacidad = scanner.nextDouble();
         String resultado = "";
 
-        if (capacidad >= 40) {
-            if (capacidad>= 70){
+        if (40 <= capacidad) {
+            if (70 <= capacidad){
                 resultado = "Estanque Lleno";
             } else {
-                resultado = capacidad >= 60 ? "Estanque casi lleno" : "Estanque 3/4";
+                resultado = 60 <= capacidad
+                        ? "Estanque casi lleno"
+                        : "Estanque 3/4";
             }
         } else {
-            if (capacidad >= 20) {
-                resultado = capacidad >= 35 ? "Medio Estanque" : "Suficiente";
+            if (20 <= capacidad) {
+                resultado = 35 <= capacidad
+                        ? "Medio Estanque"
+                        : "Suficiente";
             } else {
                 resultado = "Insuficiente";
             }
         }
+
         System.out.println("Capacidad actual = " + resultado);
     }
+
 }

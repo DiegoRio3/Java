@@ -14,9 +14,11 @@ Por ejemplo, el resultado podría ser algo así:
 La factura producto de oficina tiene un total bruto de 134.78,
 con un impuesto de 25.6082 y el monto después de impuesto es de 160.3882
  */
+
 import java.util.Scanner;
 
 public class DetalleDeFactura {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese el nombre de la factura: ");
@@ -30,4 +32,5 @@ public class DetalleDeFactura {
         System.out.println("La factura " + facturaStr + " tiene un total bruto de " + montoDouble + ", con un impuesto de "
         + impuesto + ", y el monto neto incluyendo impuesto es " + (montoDouble + impuesto));
     }
+
 }

@@ -9,16 +9,20 @@ también se pueden apoyar de google que hay varios ejemplos.
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+
 import java.time.LocalDate;
 import java.time.Period;
+
 import java.util.Date;
 import java.util.Scanner;
 
 public class CalcularEdad {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         SimpleDateFormat format = new SimpleDateFormat("dd-MM-yyyy");
         System.out.println("Ingrese la fecha de nacimiento con formato 'dd-MM-yyyy', para calcular la edad: ");
+
         try {
             Date fechaActual = new Date();
             Date fechaNacimiento = format.parse(scanner.next());
@@ -28,20 +32,18 @@ public class CalcularEdad {
             System.out.println("fechaNacimientoStr = " + fechaNacimientoStr);
             int edad = fechaActual.getYear() - fechaNacimiento.getYear();
             System.out.println("edad = " + edad);
-
             LocalDate f1 = LocalDate.of(1990, 1, 18);
             LocalDate f2 = LocalDate.now();
-
             Period period = Period.between(f1, f2);
-
             System.out.println("Tienes " + period.getYears() + " años");
 
-            if(fechaNacimiento.getMonth()>fechaActual.getMonth() || (fechaNacimiento.getMonth()==fechaActual.getMonth()&&fechaNacimiento.getDay()>fechaActual.getDay()))
-                edad=edad-1;
+            if(fechaActual.getMonth() < fechaNacimiento.getMonth() || (fechaNacimiento.getMonth() == fechaActual.getMonth() && fechaActual.getDay() < fechaNacimiento.getDay()))
+                edad = edad - 1;
 
             System.out.println("edad = " + edad);
         } catch (ParseException e) {
             e.printStackTrace();
         }
     }
+
 }

@@ -14,26 +14,32 @@ Por ejemplo para el arreglo {4, 3, 4, 6, 6, 4, 1, 4, 5, 4, 1, 1} el histograma d
     6: **
 Para la tarea usaremos el asterisco(*) como representación gráfica para el histograma.
  */
+
 import java.util.Scanner;
 
 public class ImprimirHistograma {
+
     public static void main(String[] args) {
         int[] a = new int[12];
         Scanner s = new Scanner(System.in);
+
         for (int i = 0; i < a.length; i++) {
             System.out.print("Ingrese 12 números (entre 1-6: ");
             a[i] = s.nextInt();
-            while(a[i]<1 || a[i]>7) {
+
+            while (a[i] < 1 || 6 < a[i]) {
                 System.out.println("Recuerde! Ingrese un numero del 1 al 6: ");
                 a[i] = s.nextInt();
             }
         }
+
         System.out.println("Arreglo: ");
+
         for (int i = 0; i < a.length; i++) {
             System.out.print(a[i] + " ");
         }
-        System.out.println();
 
+        System.out.println();
         StringBuilder unos = new StringBuilder();
         StringBuilder dos = new StringBuilder();
         StringBuilder tres = new StringBuilder();
@@ -41,7 +47,7 @@ public class ImprimirHistograma {
         StringBuilder cinco = new StringBuilder();
         StringBuilder seis = new StringBuilder();
 
-        for(int i=0; i<a.length;i++) {
+        for (int i = 0; i < a.length; i++) {
             switch (a[i]) {
                 case 1:
                     unos.append("*");
@@ -71,4 +77,5 @@ public class ImprimirHistograma {
         System.out.println("cinco = " + cinco);
         System.out.println("seis = " + seis);
     }
+
 }

@@ -12,24 +12,27 @@ La tarea consiste en crear una clase llamada ProgramaManejoDeNombres de la sigui
 Ejemplo, un resultado final esperado para los nombres Andres, Maria y Pepe podría ser:
 N.es_A.ia_E.pe
  */
+
 import java.util.Scanner;
 
 public class ProgramaManejoDeNombres {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese un nombre: ");
         String nombre = scanner.nextLine();
-        String n1 = nombre.substring(1,2).toUpperCase().concat(".").concat(nombre.substring(nombre.length()-2));
+        String n1 = nombre.substring(1, 2).toUpperCase().concat(".").concat(nombre.substring(nombre.length() - 2));
 
         System.out.println("Ingrese un nombre: ");
         nombre = scanner.nextLine();
-        String n2 = nombre.substring(1,2).toUpperCase().concat(".").concat(nombre.substring(nombre.length()-2));
+        String n2 = nombre.substring(1, 2).toUpperCase().concat(".").concat(nombre.substring(nombre.length() - 2));
 
         System.out.println("Ingrese un nombre: ");
         nombre = scanner.nextLine();
-        String n3 = nombre.substring(1,2).toUpperCase().concat(".").concat(nombre.substring(nombre.length()-2));
+        String n3 = nombre.substring(1, 2).toUpperCase().concat(".").concat(nombre.substring(nombre.length() - 2));
 
         String resultado = n1.concat("_").concat(n2).concat("_").concat(n3);
         System.out.println("resultado : " + resultado);
     }
+
 }

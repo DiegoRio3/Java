@@ -8,12 +8,14 @@ Ayuda: usar un bucle for que itere hasta 20 (notas) y dentro del ciclo pedir las
  una a una para realizar los cálculos (contadores, sumas).
 Opcional: si una de las notas ingresadas es 0 debe salirse del ciclo for y mostrar un mensaje de error finalizando el programa.
  */
+
 import java.util.Scanner;
 
 public class SistemaNotasAlumnos {
+
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        double notasFinales = 0.0, notasMayoresA5 = 0.0, notasInferioresA4 = 0.0, promedioTotal= 0.0;
+        double notasFinales = 0.0, notasMayoresA5 = 0.0, notasInferioresA4 = 0.0, promedioTotal = 0.0;
         int contadorMayoresA5 = 0, contadorInferioresA4 = 0, contadorDe1 = 0;
 
         bucle:
@@ -22,10 +24,10 @@ public class SistemaNotasAlumnos {
             notasFinales = s.nextDouble();
             promedioTotal = promedioTotal + notasFinales;
 
-            if (notasFinales > 5.0) {
+            if (5.0 < notasFinales) {
                 notasMayoresA5 =  notasMayoresA5 + notasFinales;
                 contadorMayoresA5++;
-            } else if (notasFinales < 4.0 && notasFinales > 1) {
+            } else if (notasFinales < 4.0 && 1 < notasFinales) {
                 notasInferioresA4 = notasInferioresA4 + notasFinales;
                 contadorInferioresA4++;
             } else if (notasFinales == 1) {
@@ -35,12 +37,15 @@ public class SistemaNotasAlumnos {
                 break bucle;
             }
         }
-        System.out.println("EL promedio de las notas mayores a 5 es: " + (notasMayoresA5/contadorMayoresA5));
-        System.out.println("El promedio de las notas inferiores a 4 es: " + (notasInferioresA4/contadorInferioresA4));
+
+        System.out.println("EL promedio de las notas mayores a 5 es: " + (notasMayoresA5 / contadorMayoresA5));
+        System.out.println("El promedio de las notas inferiores a 4 es: " + (notasInferioresA4 / contadorInferioresA4));
         System.out.println("La cantidad de notas 1 es: " + contadorDe1);
         System.out.println("El promedio final es: " + (promedioTotal / 20));
     }
+
 }
+
 
 /*
 Y este es el programa del curso

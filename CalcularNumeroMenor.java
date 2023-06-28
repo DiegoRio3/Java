@@ -8,28 +8,34 @@ Calcular el menor número e imprimir el valor.
 Si el menor número es menor que 10, imprimir "El número menor es menor que 10!". si no,
 imprimir " el numero menor es igual o mayor que 10!".
  */
+
 import java.util.Arrays;
 import java.util.Scanner;
 
 public class CalcularNumeroMenor {
+
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese la cantidad de numero a comparar: ");
         int cantidad = scanner.nextInt();
-        int[] numeros= new int[cantidad];
+        int[] numeros = new int[cantidad];
         System.out.println("Ingrese un numero: ");
-        numeros [0] = scanner.nextInt();
-        int numMin= numeros[0];
+        numeros[0] = scanner.nextInt();
+        int numMin = numeros[0];
+
         for (int i = 1; i < cantidad; i++) {
             System.out.println("Ingrese un numero: ");
             numeros [i] = scanner.nextInt();
-            if (numMin>numeros[i]) {
+
+            if (numeros[i] < numMin) {
                 numMin = numeros[i];
             }
         }
+
         System.out.println("Los numero ingresados son = " + Arrays.toString(numeros));
-        System.out.println("El numero mínimo es = " + numMin);
+        System.out.println("El numero menor es = " + numMin);
         String menor10 = numMin < 10 ? "El numero menor es menor que 10!" : "El numero menor es igual o mayor que 10!";
-        System.out.println("menor10 = " + menor10);
+        System.out.println(menor10);
     }
+
 }
