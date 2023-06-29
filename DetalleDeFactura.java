@@ -32,5 +32,4 @@ public class DetalleDeFactura {
         System.out.println("La factura " + facturaStr + " tiene un total bruto de " + montoDouble + ", con un impuesto de "
         + impuesto + ", y el monto neto incluyendo impuesto es " + (montoDouble + impuesto));
     }
-
 }

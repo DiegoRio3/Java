@@ -44,6 +44,7 @@ public class ImprimirX {
             for (int j = 0; j < matriz[i].length; j++) {
                 if (i == j || j == (matriz[i].length - 1 - i)) {
                     matriz[i][j] = "X";
+
                 } else {
                     matriz[i][j]= "_";
                 }
@@ -54,5 +55,4 @@ public class ImprimirX {
             System.out.println();
         }
     }
-
 }

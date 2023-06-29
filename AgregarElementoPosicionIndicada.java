@@ -40,5 +40,4 @@ public class AgregarElementoPosicionIndicada {
             System.out.print(b[i] + " ");
         }
     }
-
 }

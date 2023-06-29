@@ -58,15 +58,15 @@ public class ImprimirUnaSilla {
             for (int j = 0; j < matriz[i].length; j++) {
                 if (j == 0 || i == (matriz.length / 2) || (j == (matriz[i].length - 1) && (matriz.length/2) <= i)){
                     matriz[i][j] = 1;
+
                 } else {
                     matriz[i][j] = 0;
                 }
 
                 System.out.print(matriz[i][j]);
             }
-            
+
             System.out.println();
         }
     }
-
 }

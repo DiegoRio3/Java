@@ -16,5 +16,4 @@ public class CalcularAreaCirculo {
         double area = Math.PI * Math.pow(radio, 2);
         System.out.println("area = " + area);
     }
-
 }

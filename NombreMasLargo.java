@@ -32,5 +32,4 @@ public class NombreMasLargo {
 
         System.out.println(nombreMasLargo + " es el nombre mas largo.");
     }
-
 }

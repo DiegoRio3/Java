@@ -50,5 +50,4 @@ public class EliminarElementoArreglo {
             System.out.println(i + " => " + b[i]);
         }
     }
-
 }

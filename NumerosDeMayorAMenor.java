@@ -22,5 +22,4 @@ public class NumerosDeMayorAMenor {
 
         System.out.println(resultado);
     }
-
 }

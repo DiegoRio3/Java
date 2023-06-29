@@ -27,16 +27,19 @@ public class SistemaEstanqueDeGasolina {
         if (40 <= capacidad) {
             if (70 <= capacidad){
                 resultado = "Estanque Lleno";
+
             } else {
                 resultado = 60 <= capacidad
                         ? "Estanque casi lleno"
                         : "Estanque 3/4";
             }
+
         } else {
             if (20 <= capacidad) {
                 resultado = 35 <= capacidad
                         ? "Medio Estanque"
                         : "Suficiente";
+
             } else {
                 resultado = "Insuficiente";
             }
@@ -44,5 +47,4 @@ public class SistemaEstanqueDeGasolina {
 
         System.out.println("Capacidad actual = " + resultado);
     }
-
 }

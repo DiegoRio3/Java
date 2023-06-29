@@ -39,7 +39,7 @@ public class MayorOcurrenciaArreglo2 {
         System.out.println();
 
         for (int i = 0; i < a.length - 1; i++) {
-            for (int j = 0; j < a.length - 1 - i; j++) {
+            for (int j = 0; j < (a.length - 1 - i); j++) {
                 if (a[j + 1] < a[j]) {
                     int auxiliar = a[j];
                     a[j] = a[j + 1];
@@ -67,6 +67,7 @@ public class MayorOcurrenciaArreglo2 {
             if (maxcont <= contador) {
                 maxcont = contador;
                 numero = i;
+
             } else {
                 maxcont = maxcont;
             }
@@ -77,5 +78,4 @@ public class MayorOcurrenciaArreglo2 {
         System.out.println("La mayor ocurrencia es= " + maxcont);
         System.out.println("El numero que mas se repite es= " + numero);
     }
-
 }

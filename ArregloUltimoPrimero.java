@@ -32,5 +32,4 @@ public class ArregloUltimoPrimero {
             System.out.println(a[i]);
         }
     }
-
 }

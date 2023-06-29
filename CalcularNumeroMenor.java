@@ -34,8 +34,10 @@ public class CalcularNumeroMenor {
 
         System.out.println("Los numero ingresados son = " + Arrays.toString(numeros));
         System.out.println("El numero menor es = " + numMin);
-        String menor10 = numMin < 10 ? "El numero menor es menor que 10!" : "El numero menor es igual o mayor que 10!";
+
+        String menor10 = numMin < 10
+                ? "El numero menor es menor que 10!"
+                : "El numero menor es igual o mayor que 10!";
         System.out.println(menor10);
     }
-
 }

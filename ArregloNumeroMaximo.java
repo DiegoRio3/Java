@@ -35,5 +35,4 @@ public class ArregloNumeroMaximo {
 
         System.out.println("\nEl numero máximo es: " + a[max]);
     }
-
 }

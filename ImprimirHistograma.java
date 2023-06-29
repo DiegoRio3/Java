@@ -77,5 +77,4 @@ public class ImprimirHistograma {
         System.out.println("cinco = " + cinco);
         System.out.println("seis = " + seis);
     }
-
 }

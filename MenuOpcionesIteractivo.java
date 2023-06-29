@@ -55,24 +55,25 @@ public class MenuOpcionesIteractivo {
         Scanner scanner = new Scanner(System.in);
         System.out.println("---------Menú Opciones---------");
         System.out.println("1) Actualizar   2) Eliminar   3) Agregar   4) Listar   5) Salir");
-        System.out.println("Ingrese la opción requerida: ");
-        int opcion = scanner.nextInt();
+        int opcion;
 
         do {
+            System.out.println("Ingrese la opción requerida: ");
+            opcion = scanner.nextInt();
 
             switch (opcion) {
                 case 1:
                     System.out.println("Usuario actualizado correctamente");
-                    main(args);
+                    break;
                 case 2:
                     System.out.println("Usuario eliminado correctamente");
-                    main(args);
+                    break;
                 case 3:
                     System.out.println("Usuario agregado correctamente");
-                    main(args);
+                    break;
                 case 4:
                     System.out.println("Usuario listado correctamente");
-                    main(args);
+                    break;
             }
 
         } while (opcion != 5);
@@ -80,5 +81,4 @@ public class MenuOpcionesIteractivo {
         System.out.println("Haz salido con éxito!");
         System.exit(0);
     }
-
 }

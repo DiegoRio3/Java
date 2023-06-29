@@ -12,5 +12,4 @@ public class HolaMiNombreEs {
         String nombre = "Diego";
         System.out.println("Hola, mi nombre es " + nombre);
     }
-
 }

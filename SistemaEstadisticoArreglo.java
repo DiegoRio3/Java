@@ -21,9 +21,11 @@ public class SistemaEstadisticoArreglo {
             if (0 < a[i]){
                 positivos += a[i];
                 cantidadPos++;
+
             } else if (a[i] < 0) {
                 negativos += a[i];
                 cantidadNeg++;
+
             } else if (a[i] == 0) {
                 ceros++;
             }
@@ -39,16 +41,18 @@ public class SistemaEstadisticoArreglo {
 
         if (0 < cantidadPos) {
             System.out.println("Promedio de números positivos: " + (positivos / cantidadPos));
+
         } else {
             System.out.println("No hay números positivos en el arreglo");
         }
+
         if (0 < cantidadNeg) {
             System.out.println("Promedio de números negativos: " + (negativos / cantidadNeg));
+
         } else {
             System.out.println("No hay números negativos en el arreglo");
         }
 
         System.out.println("Cantidad de ceros: " + ceros);
     }
-
 }

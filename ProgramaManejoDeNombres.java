@@ -21,18 +21,29 @@ public class ProgramaManejoDeNombres {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Ingrese un nombre: ");
         String nombre = scanner.nextLine();
-        String n1 = nombre.substring(1, 2).toUpperCase().concat(".").concat(nombre.substring(nombre.length() - 2));
+        String n1 = nombre.substring(1, 2)
+                .toUpperCase()
+                .concat(".")
+                .concat(nombre.substring(nombre.length() - 2));
 
         System.out.println("Ingrese un nombre: ");
         nombre = scanner.nextLine();
-        String n2 = nombre.substring(1, 2).toUpperCase().concat(".").concat(nombre.substring(nombre.length() - 2));
+        String n2 = nombre.substring(1, 2)
+                .toUpperCase()
+                .concat(".")
+                .concat(nombre.substring(nombre.length() - 2));
 
         System.out.println("Ingrese un nombre: ");
         nombre = scanner.nextLine();
-        String n3 = nombre.substring(1, 2).toUpperCase().concat(".").concat(nombre.substring(nombre.length() - 2));
+        String n3 = nombre.substring(1, 2)
+                .toUpperCase()
+                .concat(".")
+                .concat(nombre.substring(nombre.length() - 2));
 
-        String resultado = n1.concat("_").concat(n2).concat("_").concat(n3);
+        String resultado = n1.concat("_")
+                .concat(n2)
+                .concat("_")
+                .concat(n3);
         System.out.println("resultado : " + resultado);
     }
-
 }
