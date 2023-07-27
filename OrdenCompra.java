@@ -27,7 +27,6 @@ La tarea es crear un proyecto nuevo llamado ProyectoOrdenCompra de la siguiente 
 import java.util.Date;
 
 public class OrdenCompra {
-
     private Integer autoincremental;
     private String descripcion;
     private Date fecha;
@@ -81,5 +80,17 @@ public class OrdenCompra {
         }
 
         return "Suma total de los productos= " + suma;
+    }
+
+    public void imprimir() {
+        System.out.println("Recibo: " + this.getDescripcion());
+        System.out.println("Cliente: " + this.getCliente().getNombre() + " " + this.getCliente().getApellido());
+        for (Producto p: this.getProductos()) {
+            System.out.println("Fabricante: " + p.getFabricante() +
+                    ", Nombre: " + p.getNombre() +
+                    " $" + p.getPrecio());
+        }
+        System.out.println(this.granTotal());
+        System.out.println("*----------------------------------------------------------------+");
     }
 }

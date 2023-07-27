@@ -22,33 +22,9 @@ public class EjemploOrdenes {
         orden3.addProducto(new Producto("América", "Cuaderno", 550));
         orden3.addProducto(new Producto("Bic", "Lapicera Negra", 300));
 
-        System.out.println("Recibo: " + orden1.getDescripcion());
-        System.out.println("Cliente: " + orden1.getCliente().getNombre() + " " + orden1.getCliente().getApellido());
-        for (Producto p: orden1.getProductos()) {
-            System.out.println("Fabricante: " + p.getFabricante() +
-                    ", Nombre: " + p.getNombre() +
-                    " $" + p.getPrecio());
-        }
-        System.out.println(orden1.granTotal());
-
-        System.out.println();
-        System.out.println("Recibo: " + orden2.getDescripcion());
-        System.out.println("Cliente: " + orden2.getCliente().getNombre() + " " + orden2.getCliente().getApellido());
-        for (Producto p: orden2.getProductos()) {
-            System.out.println("Fabricante: " + p.getFabricante() +
-                    ", Nombre: " + p.getNombre() +
-                    " $" + p.getPrecio());
-        }
-        System.out.println(orden2.granTotal());
-
-        System.out.println();
-        System.out.println("Recibo: " + orden3.getDescripcion());
-        System.out.println("Cliente: " + orden3.getCliente().getNombre() + " " + orden3.getCliente().getApellido());
-        for (Producto p: orden3.getProductos()) {
-            System.out.println("Fabricante: " + p.getFabricante() +
-                    ", Nombre: " + p.getNombre() +
-                    " $" + p.getPrecio());
-        }
-        System.out.println(orden3.granTotal());
+        System.out.println("*----------------------------------------------------------------+");
+        orden1.imprimir();
+        orden2.imprimir();
+        orden3.imprimir();
     }
 }
