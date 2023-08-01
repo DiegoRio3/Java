@@ -1,17 +1,24 @@
-public class Cliente {
-    private String nombre;
-    private String apellido;
+public class Cliente extends Persona{
+    private int clienteId;
 
-    public Cliente(String nombre, String apellido) {
-        this.nombre = nombre;
-        this.apellido = apellido;
+    public Cliente() { }
+
+    public Cliente(String nombre, String apellido, String numeroFiscal, String direccion) {
+        super(nombre, apellido, numeroFiscal, direccion);
     }
 
-    public String getNombre() {
-        return nombre;
+    public Cliente(String nombre, String apellido, String numeroFiscal, String direccion, int clienteId) {
+        super(nombre, apellido, numeroFiscal, direccion);
+        this.clienteId = clienteId;
     }
 
-    public String getApellido() {
-        return apellido;
+    public int getClienteId() {
+        return clienteId;
+    }
+
+    @Override
+    public String toString() {
+        return super.toString() +
+                ", clienteId= " + clienteId;
     }
 }
