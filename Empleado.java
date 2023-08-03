@@ -1,8 +1,9 @@
-public class Empleado extends Persona{
+public class Empleado extends Persona {
     private double remuneracion;
     private int empleadoId;
 
-    public Empleado() { }
+    public Empleado() {
+    }
 
     public Empleado(String nombre, String apellido, String numeroFiscal, String direccion,
                     double remuneracion, int empleadoId) {
@@ -12,7 +13,7 @@ public class Empleado extends Persona{
     }
 
     public void aumentarRemuneracion(int porcentaje){
-        this.remuneracion += remuneracion * porcentaje/100;
+        this.remuneracion += remuneracion * porcentaje / 100;
     }
 
     public double getRemuneracion() {

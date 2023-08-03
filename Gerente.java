@@ -1,7 +1,8 @@
-public class Gerente extends Empleado{
+public class Gerente extends Empleado {
     private int presupuesto;
 
-    public Gerente() { }
+    public Gerente() {
+    }
 
     public Gerente(String nombre, String apellido, String numeroFiscal, String direccion,
                    double remuneracion, int empleadoId) {
