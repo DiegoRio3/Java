@@ -1,23 +1,25 @@
 public class Producto {
-    private String fabricante;
-    private String nombre;
-    private int precio;
+    protected String nombre;
+    protected double precio;
 
-    public Producto(String fabricante, String nombre, int precio) {
-        this.fabricante = fabricante;
+    public Producto() { }
+
+    public Producto(String nombre, double precio) {
         this.nombre = nombre;
         this.precio = precio;
-    }
-
-    public String getFabricante() {
-        return fabricante;
     }
 
     public String getNombre() {
         return nombre;
     }
 
-    public int getPrecio() {
+    public double getPrecio() {
         return precio;
+    }
+
+    @Override
+    public String toString() {
+        return '\'' + nombre + '\'' +
+                ", precio = " + precio;
     }
 }
