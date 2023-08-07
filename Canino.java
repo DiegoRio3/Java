@@ -1,4 +1,4 @@
-abstract public class Canino extends Mamifero {
+public abstract class Canino extends Mamifero {
     protected String color;
     protected double tamanoColmillos;
 

@@ -51,7 +51,7 @@ A continuación dejo el diagrama UML de clases como una guía, los métodos gett
 constructores se omitieron para simplificar, pero deben ir en el código.
  */
 
-abstract public class Mamifero {
+public abstract class Mamifero {
     protected String habitat;
     protected double altura;
     protected double largo;
@@ -89,8 +89,8 @@ abstract public class Mamifero {
         return nombreCientifico;
     }
 
-    abstract public String comer();
-    abstract public String dormir();
-    abstract public String correr();
-    abstract public String comunicarse();
+    public abstract String comer();
+    public abstract String dormir();
+    public abstract String correr();
+    public abstract String comunicarse();
 }
