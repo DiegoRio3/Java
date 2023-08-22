@@ -15,13 +15,4 @@ public class Limpieza extends Producto {
     public double getLitros() {
         return litros;
     }
-
-    @Override
-    public String toString() {
-        return "Limpieza { " +
-                super.toString() +
-                ", componentes = '" + componentes + '\'' +
-                ", litros = " + litros +
-                " }";
-    }
 }

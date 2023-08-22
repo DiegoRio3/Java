@@ -15,13 +15,4 @@ public class NoPerecible extends Producto {
     public int getCalorias() {
         return calorias;
     }
-
-    @Override
-    public String toString() {
-        return "NoPerecible { " +
-                super.toString() +
-                ", contenido = " + contenido +
-                ", calorias = " + calorias +
-                " }";
-    }
 }
