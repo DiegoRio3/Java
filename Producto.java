@@ -1,25 +1,12 @@
-public class Producto {
-    protected String nombre;
-    protected double precio;
+public abstract class Producto implements IProducto {
+    private int precio;
 
-    public Producto() { }
-
-    public Producto(String nombre, double precio) {
-        this.nombre = nombre;
+    public Producto(int precio) {
         this.precio = precio;
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public double getPrecio() {
-        return precio;
-    }
-
     @Override
-    public String toString() {
-        return '\'' + nombre + '\'' +
-                ", precio = " + precio;
+    public int getPrecio() {
+        return precio;
     }
 }
