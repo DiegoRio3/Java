@@ -1,4 +1,4 @@
-public abstract class Producto implements IProducto{
+public abstract class Producto implements IProducto {
     private int precio;
 
     public Producto(int precio) {
