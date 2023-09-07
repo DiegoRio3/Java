@@ -53,7 +53,7 @@ import java.util.Date;
 public class ProyectoCatalogo {
 
     public static void main(String[] args) {
-        Producto[] producto = {new Comics(400, "Diego", "Spiderman", "Marvel", new Date(2023, 02, 26), "Peter Parker"),
+        Producto[] productos = {new Comics(400, "Diego", "Spiderman", "Marvel", new Date(2023, 02, 26), "Peter Parker"),
                 new IPhone(350000, "Apple", "Negro", "X10"),
                 new TvLcd(200000, "Samsung", 50),
                 new Libro(1900, "John Anthony Burgess Wilson", "La Naranja Mecánica", "William Heinemann", new Date(2023, 05, 30)),
@@ -62,30 +62,30 @@ public class ProyectoCatalogo {
 
         System.out.println("********************************************");
 
-        for (Producto productos : producto) {
+        for (Producto producto : productos) {
 
-            System.out.println("Producto tipo: " + productos.getClass().getName());
-            System.out.println("Precio: " + productos.getPrecioVenta());
+            System.out.println("Producto tipo: " + producto.getClass().getName());
+            System.out.println("Precio: " + producto.getPrecioVenta());
 
-            if (productos instanceof Libro) {
-                System.out.println("Fecha de Publicación: " + ((Libro) productos).getFechaPublicacion());
-                System.out.println("Autor: " + ((Libro) productos).getAutor());
-                System.out.println("Titulo: " + ((Libro) productos).getTitulo());
-                System.out.println("Editorial: " + ((Libro) productos).getEditorial());
+            if (producto instanceof Libro) {
+                System.out.println("Fecha de Publicación: " + ((Libro) producto).getFechaPublicacion());
+                System.out.println("Autor: " + ((Libro) producto).getAutor());
+                System.out.println("Titulo: " + ((Libro) producto).getTitulo());
+                System.out.println("Editorial: " + ((Libro) producto).getEditorial());
 
-                if (productos instanceof Comics) {
-                    System.out.println("Personaje: " + ((Comics) productos).getPersonaje());
+                if (producto instanceof Comics) {
+                    System.out.println("Personaje: " + ((Comics) producto).getPersonaje());
                 }
 
-            } else if (productos instanceof Electronico) {
-                System.out.println("Fabricante: " + ((Electronico) productos).getFabricante());
+            } else if (producto instanceof Electronico) {
+                System.out.println("Fabricante: " + ((Electronico) producto).getFabricante());
 
-                if (productos instanceof TvLcd) {
-                    System.out.println("Pulgadas: " + ((TvLcd) productos).getPulgada());
+                if (producto instanceof TvLcd) {
+                    System.out.println("Pulgadas: " + ((TvLcd) producto).getPulgada());
 
-                } else if (productos instanceof IPhone) {
-                    System.out.println("Color: " + ((IPhone) productos).getColor());
-                    System.out.println("Modelo: " + ((IPhone) productos).getModelo());
+                } else if (producto instanceof IPhone) {
+                    System.out.println("Color: " + ((IPhone) producto).getColor());
+                    System.out.println("Modelo: " + ((IPhone) producto).getModelo());
                 }
             }
 

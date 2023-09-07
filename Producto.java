@@ -1,5 +1,4 @@
 /*
-
 Ejercicio 26: Carro de Supermercado
 Para la tarea se pide implementar una clase llamada BolsaSupermercado que maneje tipos genéricos para guardar productos
 en una lista de máximo 5 elementos. El tipo List<T> debe ser genérico, por ejemplo podríamos tener una bolsa que guarde
