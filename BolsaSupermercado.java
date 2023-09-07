@@ -4,10 +4,6 @@ import java.util.List;
 public class BolsaSupermercado<T extends Producto> {
     private List<T> productos;
 
-    //public BolsaSupermercado(List<T> productos) {
-    //    this.productos = productos;
-    //}
-
     public BolsaSupermercado() {
         productos = new ArrayList<>();
     }
