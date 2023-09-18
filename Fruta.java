@@ -15,13 +15,4 @@ public class Fruta extends Producto {
     public String getColor() {
         return color;
     }
-
-    @Override
-    public String toString() {
-        return "Fruta { " +
-                super.toString() +
-                ", peso = " + peso +
-                ", color = '" + color + '\'' +
-                " }";
-    }
 }

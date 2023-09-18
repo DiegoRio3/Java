@@ -15,13 +15,4 @@ public class Lacteo extends Producto {
     public int getProteinas() {
         return proteinas;
     }
-
-    @Override
-    public String toString() {
-        return "Lacteo { " +
-                super.toString() +
-                ", cantidad = " + cantidad +
-                ", proteinas = " + proteinas +
-                " }";
-    }
 }
