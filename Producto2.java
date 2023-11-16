@@ -1,10 +1,10 @@
 package org.diego.api.stream.ejemplos.models;
 
-public class Producto {
-    private double precio;
-    private int cantidad;
+public class Producto2 {
+    private final double precio;
+    private final int cantidad;
 
-    public Producto(double precio, int cantidad) {
+    public Producto2(double precio, int cantidad) {
         this.precio = precio;
         this.cantidad = cantidad;
     }
@@ -13,16 +13,8 @@ public class Producto {
         return precio;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
-    }
-
     public int getCantidad() {
         return cantidad;
-    }
-
-    public void setCantidad(int cantidad) {
-        this.cantidad = cantidad;
     }
 
     @Override
